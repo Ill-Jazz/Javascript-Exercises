@@ -10,8 +10,9 @@
 // You will have time to focus on it later.
 
 (function(){
-
+    function hello(){
     let user = prompt("What's yo name G?");
-    alert('Hello, ' + user + '!' );
-
+    alert('Hello, ' + user + '!';
+    }
+    hello();
 })();
