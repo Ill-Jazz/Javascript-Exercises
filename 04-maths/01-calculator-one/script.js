@@ -13,7 +13,7 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("addition").addEventListener("click", function() {
-        // perform an addition
+
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
