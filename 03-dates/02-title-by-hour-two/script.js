@@ -9,10 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    let today = new Date();
+    let curHours = today.getHours();
+    let curMinutes = today.getMinutes();
+
+    // Als uur kleiner dan 17 dan hello
+    // als uur gelijk is aan 17u dan
+
+    if (curHours >= 17 && curMinutes >= 30) {
+        changeTag("Good evening")
+    } else {
+        changeTag("Hello");
+    }
+
+    function changeTag(tag) {
+        document.getElementById("target").innerHTML = tag;
+    }
 
 })();
