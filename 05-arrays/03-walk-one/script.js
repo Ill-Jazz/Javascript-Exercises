@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "apple",
         "pear",
         "raspberry",
@@ -25,7 +25,9 @@
         "grap",
         "cherry",
     ];
-
-    // your code here
-
+    document.getElementById("run").addEventListener("click",function () {
+        for (i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+    });
 })();
