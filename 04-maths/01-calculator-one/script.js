@@ -16,8 +16,8 @@
         let op1 = document.getElementById("op-one").value;
         let op2 = document.getElementById("op-two").value;
 
-        let add = (Number(op1) + Number(op2));
-        alert(add);
+
+        alert(Number(op1) + Number(op2));
 
     });
 
@@ -25,23 +25,22 @@
         let op1 = document.getElementById("op-one").value;
         let op2 = document.getElementById("op-two").value;
 
-        let sub = (Number(op1) - Number(op2));
-        alert(sub);
+        alert(Number(op1) - Number(op2));
+
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         let op1 = document.getElementById("op-one").value;
         let op2 = document.getElementById("op-two").value;
 
-        let mul = (Number(op1) * Number(op2));
-        alert(mul);
+        alert(Number(op1) * Number(op2));
     });
 
     document.getElementById("division").addEventListener("click", function() {
         let op1 = document.getElementById("op-one").value;
         let op2 = document.getElementById("op-two").value;
 
-        let divis = (Number(op1) / Number(op2));
-        alert(divis);
+      alert(Number(op1) / Number(op2));
+
     });
 })();
