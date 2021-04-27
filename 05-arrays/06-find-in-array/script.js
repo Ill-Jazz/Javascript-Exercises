@@ -89,6 +89,18 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
 
+        let index = people.findIndex((person) => {
+            return person.firstname === "Jean" && person.lastname === "Dupont";
+        });
+
+        people.forEach(function (person) {
+            if (person.firstname === "Jean" && person.lastname === "Dupont") {
+                console.log(person.email);
+                console.log(`Index: ${index}`);
+            } else {
+            }
+        });
+    });
 })();

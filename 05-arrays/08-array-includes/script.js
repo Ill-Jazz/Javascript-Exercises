@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "apple",
         "perry",
         "strawberry",
@@ -26,6 +26,15 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let itemFind = "apple";
+        let itemFound = fruits.includes(itemFind);
+        if (itemFound){
+            console.log("Yes");
+        }
+        else {
+            console.log("No");
+        }
+    });
 
 })();
