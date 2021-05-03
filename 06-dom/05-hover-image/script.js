@@ -10,7 +10,10 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    var x = document.querySelector('.material figure img').getAttribute('data-hover');
+    var image = document.querySelector('img');
+    image.addEventListener('mouseover', function (){
+        this.src = x;
+        })
 
 })();
