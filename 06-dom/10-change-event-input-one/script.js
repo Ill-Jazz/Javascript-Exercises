@@ -9,8 +9,29 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    let targetMax = document.getElementById("pass-one");
+    let max = document.createAttribute("maxlength");
+    max.value = "10";
+    targetMax.setAttributeNode(max);
+
+    let count = document.getElementById("counter");
+
+    targetMax.addEventListener("input", counterStatus)
+
+    function counterStatus() {
+        count.innerHTML = ((targetMax.value).length + "/10");
+    }
+
+
+    /*let char = document.getElementById("counter").value;
+    let newArrey = [char];
+
+    for (let i=0; i<9,i++) {
+
+    }
+*/
+
 
 })();

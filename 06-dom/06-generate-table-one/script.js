@@ -10,24 +10,28 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    /*var tbl = document.createElement("table");
+/*
+    let tbl = document.createElement("table");
     tbl.setAttribute("id", "myTable");
-    document.getElementById("target").appendChild(tbl);
 
-    var x = document.createElement("tr");
+    let x = document.createElement("tr");
     x.setAttribute("id", "myRow");
-    document.getElementById("myTable").appendChild(x);
 
-    var y = document.createElement("td");
+
+    let y = document.createElement("td");
     y.setAttribute("id", "myCol")
-    document.getElementById("myRow").appendChild(y);
 
+
+    for (i=0;i<9;i++) {
+
+    }
 */
+
+
     let targetVar = document.getElementById("target");
     let newTable = document.createElement("TABLE");
 
-    // your code here
+
     for ( let i = 0; i < 10; i++) {
         let newRow = newTable.insertRow(i);
         let newCell = newRow.insertCell(0);
@@ -36,6 +40,5 @@
     }
     targetVar.appendChild(newTable);
     console.log(newTable);
-
 
 })();
