@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let me = {
+        lastname: "Guedoura",
+        firstname: "Ilias",
+        age: "31",
+        city: "Ape-town",
+        countr: "Belgium"
+    };
+
+    let button = document.getElementById("run");
+    button.addEventListener("click", display);
+
+    function display(){
+        console.log(me);
+    }
+
 })();
