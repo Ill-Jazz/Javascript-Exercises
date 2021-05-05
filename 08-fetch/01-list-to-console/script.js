@@ -23,5 +23,5 @@
 
     let button = document.getElementById("run");
     button.addEventListener("click", getApi);
-    
+
 })();
